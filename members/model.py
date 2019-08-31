@@ -25,7 +25,7 @@ class MemberModel:
         stmt = """
             INSERT INTO MEMBER(USERID, PASSWORD, PHONE) VALUES(?, ?, ?)
         """
-        self.conn.execute(stmt, data)
+        self.conn.executemany(stmt, data)
         self.conn.commit()
 
     def fetch_one(self):

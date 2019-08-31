@@ -5,7 +5,7 @@ from calculator.controller import CalculatorController
 #model은 controller에서 호출하는 것이고 app.py에서는 controller를 호출
 
 from cabbage.controller import CabbageController
-
+from members.controller import MemberController
 
 
 app = Flask(__name__)
@@ -61,6 +61,15 @@ def cabbage():
     render_params = {}
     render_params['result'] = result
     return render_template('cabbage.html', **render_params)
+
+@app.route("/login", methods=["POST"])
+def login():
+    userid = request.form['userid']
+    password = request.form['password']
+    ctrl = MemberController()
+#    ctrl.create_table() -> 테이블 만드는 것은 처음 1회만 하면 됨. 로그인 입력 설정할때는 실행x.
+    view = ctrl.login(userid, password)
+    return render_template(view)
 
 
 @app.route("/")

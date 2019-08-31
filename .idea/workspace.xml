@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59b8c4c1-51ff-4351-8896-100617f45769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabbage/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabbage/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
