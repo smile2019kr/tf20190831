@@ -7,6 +7,7 @@ from calculator.controller import CalculatorController
 from cabbage.controller import CabbageController
 
 
+
 app = Flask(__name__)
 
 @app.route("/move/<path>") # 페이지 이동 설정 <path>에 해당하는 화면으로 이동하라는 것. "/move/ui_calc" -> ui_calc로 이동
@@ -48,13 +49,19 @@ def ai_calc():
     return render_template('ai_calc.html', **render_params)
 
 
-@app.route("/cabbage")
+@app.route("/cabbage", methods=["POST"])
 def cabbage():
 #avg_temp min_temp max_temp rain_fall
     avg_temp = request.form['avg_temp']
     min_temp = request.form['min_temp']
     max_temp = request.form['max_temp']
-    avg_temp = request.form['avg_temp']
+    rain_fall = request.form['rain_fall']
+    ctrl = CabbageController(avg_temp, min_temp, max_temp, rain_fall)
+    result = ctrl.service()
+    render_params = {}
+    render_params['result'] = result
+    return render_template('cabbage.html', **render_params)
+
 
 @app.route("/")
 def index():
